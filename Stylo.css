@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+img {
+  border-radius: 25px;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh !important; */
+  /* background-size:  !important; */
+  /* background */
+  background-attachment: fixed;
+  /* background-image: url(Future-1.jpg) !important; */
+  /* background-repeat: no-repeat !important; */
+}
+p {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+h3 {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  flex-wrap: wrap;
+  z-index: 21;
+}
+.container .card {
+  position: relative;
+  width: 280px;
+  height: 500px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.container .card .content {
+  padding: 40px;
+  text-align: center;
+  transform: translateY(-30px);
+  opacity: 100;
+  transition: 0.5s;
+}
+.container .card:hover .content {
+  transform: translateY(0px);
+  opacity: 10;
+}
+.container .card .content h2 {
+  position: absolute;
+  top: -80px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+.container .card .content h3 {
+  font-size: 1.8em;
+  color: white;
+  z-index: 1;
+}
+.container .card .content p {
+  font-size: 1em;
+  color: white;
+  font-weight: 300;
+}
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-attachment: white;
+  color: white;
+}

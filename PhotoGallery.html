@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Photo gallery </title>
+    <link rel="stylesheet" href="PTG.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="header.js" defer></script>
+  </head>
+<body>
+  <pop-header></pop-header>
+  <main>
+    <div class="full-img" id="fullImgBox">
+            <img src="Gallery/img1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img width="500px" src="Gallery/img1.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Gallery/img2.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Gallery/img3.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Gallery/img4.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Gallery/img5.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Gallery/img6.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Future10.jpg" onclick="openFullImg(this.src)">
+        <img width="500px" src="Future-1.jpg" onclick="openFullImg(this.src)">
+    </div>
+     <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+     </script>
+     </main>
+      <pop-footer></pop-footer>  
+  </body>
+ 
+</html>

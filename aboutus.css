@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+  }
+      body{
+          background-size: cover;
+          background-image: url(PF.jpeg);
+          background-repeat: no-repeat;
+   
+      }
+      h1 {
+          text-align: center;
+          position: relative;
+          
+          font-size: 2em;
+        
+      }
+     p.bl {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      justify-content: center;
+      height: auto;
+      width: 50%;
+      padding: 40px;
+   
+
+   
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+      font-weight: bolder;
+      font-size: 150%;
+     }
+     

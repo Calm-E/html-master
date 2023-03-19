@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Future10.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: change 20s infinite ease-in-out;/*switching speed*/
+  background-attachment: fixed;
+}
+@keyframes change {
+  0% {
+    background-image: url(Future10.jpg);
+  }
+  10% {
+    background-image: url(PF.jpeg);
+  }
+  10% {
+    background-image: url(Future-1.jpg);
+  }
+}
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;  
+  padding: 35px, 15%;
+  background-color: #0000001f;
+  backdrop-filter: blur(15px);
+}
+.welcome { /* This is the welcome line in the far left*/
+  color: white;
+  font-size: 3rem;
+  margin-left: 150px;
+  margin-top:65px
+}
+.test {
+  color: black;
+  font-size: 2.5em;
+  margin-left: 8rem;
+  padding: 20px;
+  border-radius: 1px;
+  background-color: white;
+  ;
+}
+.kwame{
+  font-size: 2.5em;
+  margin-left: auto;
+  color: white;
+  margin-top: 2rem;
+  text-align: right;
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  display: block;
+}
+.temp {
+  border-radius: 10px;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  max-width: 1000px;
+}
+.lydia {
+  display: inline-block;
+  color:black;
+  padding: 20px;
+  border-radius: 7px;
+  margin-top: 5px;
+  font-size: 18px;
+  background-color: white;
+}
+
+.logo {
+  color: brown;
+  font-size: 50px;
+  font-weight: 700;
+ 
+   margin-left: 4em;  
+    
+  /* display: flex; */
+}
+span {
+  color: rgb(87, 78, 78);
+   
+}
+.navbar {
+  display: flex;
+    align-items: center;
+  justify-content: center;
+  top: 0px;
+}
+.navbar a {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #f5f5f5;
+  transition: transform 0.45s ease;
+  border-radius: 5px;
+  display: flex; /* flex behavior (displays children inline) */
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
+  margin: 0;
+  top: 0;
+}
+.navbar a:hover {
+  transform: scale(1.2);
+  backdrop-filter: 10px;
+  cursor: pointer;
+}
+#menu-icon {
+  font-size: 30px;
+  z-index: 10001;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-btn a {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 6000;
+}
+.header-btn .Give {
+  background: green;
+  border: 2px solid;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.header-btn .Give:hover {
+  border: 2px solid #c32865;
+  background: transparent;
+}
+
+button {
+  border: none;
+  background: transparent;
+  padding: 12px 40x;
+  border-radius: 40px;
+
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  /*font-size: 30px;*/
+  transition: 0.4s;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  background-color: light greenyellow;
+  border-radius: 3px;
+}
+
+.select {
+  padding: 8px 12px;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+
+  /*replace defult styling*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns ="http://www.w3.org/2000/svg" width = "100" height = "50"><polygon points ="0,0 100, 0, 50,50" style ="fill:%23666666;" /></svg>');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 30px;
+}
+
+.select:hover:focus {
+  outline: none;
+  border: 0.2px solid transparent;
+}
+
+footer {
+
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  bottom: 0%;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  /* Styles for small screens */
+  header,
+  nav,
+  section,
+  footer {
+    padding: 5px;
+  }
+}
