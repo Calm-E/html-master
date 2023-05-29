@@ -11,6 +11,9 @@
 body {
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-image: url(Future10.jpg);
   background-size: cover;
   background-position: center;
@@ -32,14 +35,74 @@ header {
   position: sticky;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 9;
   display: flex;
   /* align-items: center; */
   justify-content: center;  
   padding: 35px, 15%;
   background-color: #0000001f;
-  backdrop-filter: blur(15px);
+   backdrop-filter: blur(15px); 
 }
+
+header> .pop-header-alert{
+  background-color: var(#faf2eb);
+  padding: var(10px);
+  text-align: center;
+}
+
+a {
+  color: var(#f5f6fa);
+  text-decoration: none;
+  border-bottom: 1px solid var(#5a4316);
+  transition: 0.3s border-bottom var(-cubic-bezier(0.5, 0, 0, 0.75)), 0.3s border var(--cg-bezier);
+  margin-bottom: 5px;
+}
+
+.logo {
+  color: brown;
+  font-size: 50px;
+  font-weight: 700;
+ 
+   margin-left: 4em;  
+    
+  /* display: flex; */
+}
+span {
+  color: rgb(87, 78, 78);
+   
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+}
+.navbar a {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #f5f5f5;
+  transition: transform 0.45s ease;
+  border-radius: 5px;
+  display: flex; /* flex behavior (displays children inline) */
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
+  margin: 0;
+  top: 0;
+}
+.navbar a:hover {
+  transform: scale(1.2);
+  backdrop-filter: 10px;
+  cursor: pointer;
+}
+#menu-icon {
+  font-size: 30px;
+  z-index: 10001;
+  color: #fff;
+  cursor: pointer;
+}
+
+
 .welcome { /* This is the welcome line in the far left*/
   color: white;
   font-size: 3rem;
@@ -81,50 +144,7 @@ header {
   background-color: white;
 }
 
-.logo {
-  color: brown;
-  font-size: 50px;
-  font-weight: 700;
- 
-   margin-left: 4em;  
-    
-  /* display: flex; */
-}
-span {
-  color: rgb(87, 78, 78);
-   
-}
-.navbar {
-  display: flex;
-    align-items: center;
-  justify-content: center;
-  top: 0px;
-}
-.navbar a {
-  font-size: 2em;
-  font-weight: 500;
-  padding: 10px 20px;
-  color: #f5f5f5;
-  transition: transform 0.45s ease;
-  border-radius: 5px;
-  display: flex; /* flex behavior (displays children inline) */
-  justify-content: center; /* horizontal centering */
-  align-items: center; /* vertical centering */
-  margin: 0;
-  top: 0;
-}
-.navbar a:hover {
-  transform: scale(1.2);
-  backdrop-filter: 10px;
-  cursor: pointer;
-}
-#menu-icon {
-  font-size: 30px;
-  z-index: 10001;
-  color: #fff;
-  cursor: pointer;
-}
-
+/*
 .header-btn a {
   padding: 10px 20px;
   color: #fff;
@@ -150,9 +170,12 @@ button {
 
   color: rgb(0, 0, 0);
   font-weight: bold;
+  
   /*font-size: 30px;*/
+  /*
   transition: 0.4s;
-}
+}*/
+
 button:hover {
   transform: scale(1.2);
   cursor: pointer;
@@ -160,16 +183,18 @@ button:hover {
   transition: 0.3s;
   background-color: light greenyellow;
   border-radius: 3px;
-}
-
+} 
+/*
 .select {
   padding: 8px 12px;
   color: black;
   background-color: transparent;
   cursor: pointer;
   border-radius: 5px;
+  */
 
   /*replace defult styling*/
+  /*
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -179,22 +204,43 @@ button:hover {
   background-size: 10px;
   padding-right: 30px;
 }
-
+/
 .select:hover:focus {
   outline: none;
   border: 0.2px solid transparent;
-}
+} */
+
+
+
+
+
+/* Footer */
 
 footer {
-
-  backdrop-filter: blur(10px);
+  background-color: #2f3542;
   color: rgb(255, 255, 255);
-  padding: 5px;
-  text-align: center;
-  position: sticky;
-  bottom: 0%;
-  width: 100%;
-  height: 2.5rem;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+}
+footer a{
+  color: #faf2eb;
+  border: transparent;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer a:hover{
+  transform: scale(1.2);
+  backdrop-filter: 10px;
+  cursor: pointer;
+}
+.pop-footer-section{
+  display: grid;
+  grid-template-columns: repeat(6,16%);
+  gap: 0.6%;
+}
+.pop-footer-section > div {
+  margin-bottom: 20px;
 }
 
 /* Responsive design */
